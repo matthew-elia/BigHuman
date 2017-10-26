@@ -1,0 +1,40 @@
+@import '../global/variables';
+@import '../global/mixins';
+
+#Main {
+	padding-top:100px;
+	background: $blue;
+	color:$white;
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	bottom: 0;
+	#MainContainer {
+		height: 100%;
+		#FeaturedTextSection {
+			position: relative;
+			top:100px;
+			h1 {
+				font-size: 48px;	
+			}
+			p {
+				font-size: 18px;	
+				line-height: 1.5;
+			}
+			#UsePlentifulButton {	
+				margin-top: 12px;
+				background: $turquoise;
+				color: $white;
+				padding: 18px 24px;
+			}
+		}		
+		#FeaturedImagePanel{
+			height: inherit;
+			#FeaturedImageBag{
+	    	position: absolute;
+	    	bottom: 0;
+	    	max-height: 500px;
+			}
+		}	
+	}
+}

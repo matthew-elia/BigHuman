@@ -1,36 +1,9 @@
 @import 'variables';
 @import 'mixins';
 
-.App {
-  text-align: center;
+* {
+  font-family: 'Roboto', sans-serif;  
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html {
+  background: $blue;
 }
-
-.App-header {
-  background-color: $blue;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}body {}

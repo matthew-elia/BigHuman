@@ -4,15 +4,61 @@
 #Header { 
   nav.navbar.navbar-default {
     background-color: $blue !important;
-    min-height: 100px ;
+    margin-bottom: 0 !important;
+    border: none;
+    border-radius: 0;
     .container {
       width: 100%;
+      margin-top: 12px;
       .navbar-brand {
-        height:100px;
+        margin-left:24px;
+        max-width: 200px;
+        height: auto;
       }
-      * {
-        color:white !important;
-      }
+      .navbar-collapse {
+        padding:24px 48px;
+        position: relative;
+        z-index: 32767;
+        .navbar-right {
+          a,li{
+            color: $white;
+            &:hover{background:$turquoise;}
+          }
+          li[role="presentation"]{
+            margin-right:48px;
+          }
+          #nav-dropdown {
+            border: 1px solid $white;
+            border-radius: 4px;
+            padding: 16px 34px 14px 34px;
+            color: $white;
+            background: $blue;
+            color: $white;
+            &:hover{background:$turquoise;}
+            span.caret {
+              margin-left: 24px;
+              border-top: 8px dashed;
+              border-right: 8px solid transparent;
+              border-left: 8px solid transparent;
+            }
+          }
+          .dropdown-menu {
+            background: $blue;
+            li[role="presentation"]{
+              margin-right: initial;
+              padding: 8px 4px;
+            }
+            .langFlagIcon {
+              width: 50px;
+              height: auto;
+              margin-right: 8px;
+            }
+            // &:hover{background:$turquoise;}
+          }
+        }
+        
+
     }
   }
+}
 }
