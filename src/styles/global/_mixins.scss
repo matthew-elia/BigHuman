@@ -1,0 +1,5 @@
+@mixin media( $value, $operator: 'max-width', $query: 'screen' ) {
+  @media #{$query} and (#{$operator}: #{$value}) {
+    @content;
+  }
+}
