@@ -1,4 +1,5 @@
-@import 'variables.scss'; // assuming a styles directory under src/
+@import 'variables';
+@import 'mixins';
 
 .App {
   text-align: center;

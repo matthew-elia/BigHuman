@@ -1,0 +1,18 @@
+@import '../global/variables';
+@import '../global/mixins';
+
+#Header { 
+  nav.navbar.navbar-default {
+    background-color: $blue !important;
+    min-height: 100px ;
+    .container {
+      width: 100%;
+      .navbar-brand {
+        height:100px;
+      }
+      * {
+        color:white !important;
+      }
+    }
+  }
+}
